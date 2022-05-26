@@ -1,0 +1,39 @@
+
+pipeline {
+
+    enviornment {
+        aws_access_key = credentials('aws_access_key')
+        aws_secret_key = credentials('aws_secret_key')
+    }
+    agent any
+
+    // tools {
+    //     // Install the Maven version configured as "M3" and add it to the path.
+    //     maven "M3"
+    // }
+
+    stages {
+        stage('SCM') {
+            steps {
+                // Get some code from a GitHub repository
+                git 'https://github.com/soniya979/terraform_2022.git'
+
+            }
+
+            stage('init') {
+                steps{
+
+                    sh terraform init
+                }
+                }
+            
+            stage('plan') {
+                steps{
+
+                    sh terraform plan
+                }
+                }
+            }
+        }
+    }
+}
