@@ -2,9 +2,13 @@
 #   type = string
 #   default = "network_id_from_aws"
 # }
-variable "aws_access_key" {}
+variable "aws_access_key" {
+    default = "AKIAQ5O5VMGOMC4P4LNS"
+}
 
-variable "aws_secret_key" {}
+variable "aws_secret_key" {
+    default = "/cJFbD0D5eW4Q2/sdh6OmejMYeVoEttpVhsGB7cp"
+}
 
 variable "region" {
     type = string
