@@ -16,7 +16,7 @@ variable "region" {
 }
 variable "ami" {
     type = string
-    default = "ami-005e54dee72cc1d00"
+    default = "ami-079b5e5b3971bd10d"
 }
 
 variable "instance_type" {
