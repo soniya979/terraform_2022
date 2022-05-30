@@ -3,11 +3,11 @@
 #   default = "network_id_from_aws"
 # }
 variable "aws_access_key" {
-    default = "AKIAQ5O5VMGOMC4P4LNS"
+    default = "AKIAQ5O5VMGOFO4SXYQY"
 }
 
 variable "aws_secret_key" {
-    default = "/cJFbD0D5eW4Q2/sdh6OmejMYeVoEttpVhsGB7cp"
+    default = "iKyo9DepozDX1mo0Uvz8QtZt9rArTcBH7j68h82H"
 }
 
 variable "region" {
