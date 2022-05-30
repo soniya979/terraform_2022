@@ -1,15 +1,15 @@
 
 pipeline {
 
-    parameters {
-        string(name: 'environment')
+    // parameters {
+    //     string(name: 'environment')
 
-    }
+    // }
 
-    environment {
-        aws_access_key = credentials('aws_access_key')
-        aws_secret_key = credentials('aws_secret_key')
-    }
+    // environment {
+    //     aws_access_key = credentials('aws_access_key')
+    //     aws_secret_key = credentials('aws_secret_key')
+    // }
 
     agent any
 
